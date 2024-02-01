@@ -1,0 +1,33 @@
+{
+  "name": "log-parser",
+  "version": "1.0.0",
+  "description": "Command line interface to analyse log files",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint --ext .ts",
+    "start": "npx ts-node index.ts",
+    "test": "jest"
+  },
+  "author": "Neil Khatri",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  }
+}

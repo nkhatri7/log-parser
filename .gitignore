@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Local env files
+.env*.local
+
+# MacOS
+.DS_Store
+*.pem
