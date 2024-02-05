@@ -1,4 +1,4 @@
-import { getFileReader } from "./fileReader";
+import { getFileReader } from "./util/fileUtils";
 import { getTopThreeFromMap, printMapRanking } from "./util/mapUtils";
 
 interface LogResults {
@@ -7,7 +7,7 @@ interface LogResults {
   mostVisitedUrls: Map<string, number>;
 }
 
-export const analyseLogFile = async (filePath: string) => {
+export const analyseLogFile = (filePath: string) => {
   const ipAddressMap = new Map<string, number>();
   const urlMap = new Map<string, number>();
 

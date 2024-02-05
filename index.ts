@@ -1,6 +1,6 @@
 import promptSync from "prompt-sync";
 import { analyseLogFile } from "./src/logParser";
-import { doesFileExist } from "./src/fileReader";
+import { doesFileExist } from "./src/util/fileUtils";
 
 const EXAMPLE_LOG_FILE_PATH = "./assets/mockData/programming-task-example-data.log";
 
