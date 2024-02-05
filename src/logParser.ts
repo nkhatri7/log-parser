@@ -1,7 +1,7 @@
 import { getFileReader } from "./util/fileUtils";
 import { getTopThreeFromMap, printMapRanking } from "./util/mapUtils";
 
-interface LogResults {
+export interface LogResults {
   uniqueIpAddresses: number;
   mostActiveIpAddresses: Map<string, number>;
   mostVisitedUrls: Map<string, number>;
